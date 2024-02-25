@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Your Website</h1>
+    </header>
+
+    <section class="login">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section class="info">
+        <h2>About Us</h2>
+        <p>Provide information about your website here.</p>
+    </section>
+
+    <section class="registration">
+        <h2>Registration</h2>
+        <form action="/register" method="post">
+            <!-- Include registration form fields here -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section class="search-bar">
+        <h2>Search</h2>
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+</body>
+</html>
